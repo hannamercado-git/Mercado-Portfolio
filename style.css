@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(183, 197, 236);
+}
+
+nav {
+    background-color: #7b8fd3;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: skyblue;
+}
+
+main {
+    padding: 40px;
+}
+
+h1 {
+    color: #222;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.page-title {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.welcome {
+    max-width: 500px;
+}
+
+.my-name {
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.more-button {
+    display: inline-block;
+    background-color: #6A5ACD;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.more-button:hover {
+    background-color: #483D8B;
+}
+
+.fave {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.music-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.music-list {
+    width: 40%;
+}
+
+.music-list h2 {
+    color: #6A5ACD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.music-list ul {
+    padding-left: 25px;
+}
+
+.music-list li {
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.album-collage {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.album-collage img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
