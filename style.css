@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(239, 240, 243);
+}
+
+nav {
+    background-color: #7b8fd3;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: skyblue;
+}
+
+main {
+    padding: 40px;
+}
+
+h1 {
+    color: #222;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
