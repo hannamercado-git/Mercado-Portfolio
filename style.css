@@ -5,6 +5,7 @@ body {
     background-color: rgb(183, 197, 236);
 }
 
+/* navigation bar */
 nav {
     background-color: #7b8fd3;
     padding: 20px;
@@ -23,6 +24,7 @@ nav a:hover {
     color: skyblue;
 }
 
+/* main content */
 main {
     padding: 40px;
 }
@@ -83,7 +85,7 @@ p {
 .more-button:hover {
     background-color: #483D8B;
 }
-
+/* favorite section */
 .fave {
     color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -92,7 +94,7 @@ p {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-
+/* music section */
 .music-section {
     display: flex;
     align-items: flex-start;
@@ -119,6 +121,7 @@ p {
 .music-list li {
     margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -135,3 +138,454 @@ p {
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* home button on favorite page */
+.home-button {
+    display: inline-block;
+    background-color: #6A5ACD;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.home-button:hover {
+    background-color: #483D8B;
+}
+/* movie section */
+.movie-collage {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.movie-collage img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.movie-list {
+    width: 40%;
+}
+
+.movie-list h2 {
+    color: #6A5ACD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.movie-list ul {
+    padding-left: 25px;
+}
+
+.movie-list li {
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* food section */
+.food-collage {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.food-collage img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.food-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.food-list {
+    width: 40%;
+}
+
+.food-list h2 {
+    color: #6A5ACD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.food-list ul {
+    padding-left: 25px;
+}
+
+.food-list li {
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* favorite pictures hover effect */
+
+.album-collage img,
+.movie-collage img,
+.food-collage img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.album-collage img:hover,
+.movie-collage img:hover,
+.food-collage img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* section divider */
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: #7b8fd3;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+/* hobbies section */
+.hobbies-container {
+    background-color: #dce2f5;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.hobby-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+
+     transition: transform 0.4s ease;
+}
+
+.hobby-box h2 {
+    color: #6A5ACD;
+}   
+
+/* journey section */
+
+.journey-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.journey-container {
+    background-color: #dce2f5;
+    width: 75%;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.journey-card {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 15px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    /* animation */
+    opacity: 0;
+    animation: appear 0.8s ease forwards;
+}
+
+.journey-number {
+    color: #6A5ACD;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.journey-card h2 {
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+}
+
+.journey-ending {
+    text-align: center;
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+    margin-top: 40px;
+}
+
+/* journey card animation */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* animation delay */
+
+.journey-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.journey-card:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.journey-card:nth-child(3) {
+    animation-delay: 1.3s;
+}
+
+.journey-card:nth-child(4) {
+    animation-delay: 1.8s;
+}
+/* more section */
+.about-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    background-color: #dce2f5;
+    width: 80%;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 25px;
+}
+
+/* personal information grid */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.about-card h2 {
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+/* pets section */
+
+.pets-title {
+    text-align: center;
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.pet-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-7px);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.pet-card:hover img {
+    transform: scale(1.03);
+}
+
+.pet-card h2 {
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+}
+
+/* instagram section */
+
+.instagram-card {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.instagram-card h2 {
+    color: #6A5ACD;
+    font-family: Georgia, serif;
+}
+/* MOBILE RESPONSIVENESS🥹 */
+@media (max-width: 600px) {
+
+    nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 8px;
+    }
+
+    nav a {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+    }
+
+    /* General adjustments */
+    main {
+        padding: 15px;
+    }
+
+    .page-title,
+    .fave {
+        font-size: 36px;
+    }
+
+    /* FAVORITES PAGE */
+    .music-section,
+    .movie-section,
+    .food-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px 5px;
+    }
+
+    .music-list,
+    .movie-list,
+    .food-list {
+        width: 100%;
+    }
+
+    .album-collage,
+    .movie-collage,
+    .food-collage {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album-collage img,
+    .movie-collage img,
+    .food-collage img {
+        width: 100%;
+    }
+
+    /* HOBBIES PAGE */
+    .hobbies-container {
+        width: 100%;
+        padding: 15px;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+
+    .hobby-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hobby-box img {
+        height: 200px;
+    }
+
+    /* MORE ABOUT ME PAGE */
+    .about-container {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .about-grid,
+    .pets-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-card,
+    .pet-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pet-card img {
+        height: 200px;
+    }
+
+    .instagram-card {
+        padding: 20px;
+    }
+}
+
+
